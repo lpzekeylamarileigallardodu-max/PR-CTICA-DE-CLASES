@@ -9,3 +9,11 @@ class Triangulo {
         return uwu;
     }
 }
+static void Main(string[] args) {
+    Triangulo t = new Triangulo();
+    t.lado1 = 3;
+    t.lado2 = 4;
+    t.lado3 = 5;
+    
+    Console.WriteLine("El resultado es: " + t.calcularArea());
+}

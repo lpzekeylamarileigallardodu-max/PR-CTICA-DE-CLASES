@@ -1,19 +1,16 @@
-class Triangulo {
-    public double lado1 { get; set; }
-    public double lado2 { get; set; }
-    public double lado3 { get; set; }
-
-    public double calcularArea() {
-        double xd = (lado1 + lado2 + lado3) / 2;
-        double uwu = Math.Sqrt(xd * (xd - lado1) * (xd - lado2) * (xd - lado3));
-        return uwu;
-    }
-}
-static void Main(string[] args) {
-    Triangulo t = new Triangulo();
-    t.lado1 = 3;
-    t.lado2 = 4;
-    t.lado3 = 5;
-    
-    Console.WriteLine("El resultado es: " + t.calcularArea());
-}
+class iluminati:
+    def __init__(self):
+        self.lado1 = 0
+        self.lado2 = 0
+        self.lado3 = 0
+    def metodo(self):
+         t =(self.lado1+self.lado2+self.lado3)/2
+         aña=(t*(t-self.lado1)*(t-self.lado2)*(t-self.lado3))**0.5
+         return aña    
+print("ponle lo tres lados del nacho")
+objeto = iluminati()
+objeto.lado1 = float(input("Ingrese lado 1: "))
+objeto.lado2 = float(input("Ingrese lado 2: "))
+objeto.lado3 = float(input("Ingrese lado 3: "))
+añia=objeto.metodo()
+print("el área es: ", añia)

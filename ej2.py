@@ -1,10 +1,14 @@
-class xd {
-    public double radio { get; set; }
-    public double altura { get; set; }
-
-    public double sacarVolumen() {
-        double xd = Math.PI * Math.Pow(radio, 2) * altura;
-        double uwu = xd;
-        return uwu;
-    }
-}
+import math
+class cilindrouwu:
+    def __init__(self):
+        self.radio = 0
+        self.altura = 0
+    def metodo(self):
+        tuboarea = math.pi*(self.radio*self.radio)*self.altura
+        return tuboarea    
+print("metele el radio y la altura de tu cilindro")
+objeto = cilindrouwu()
+objeto.radio = float(input("radio gaga: "))
+objeto.altura = float(input("con altura: "))
+añia = objeto.metodo()
+print("el área es: ",añia)
